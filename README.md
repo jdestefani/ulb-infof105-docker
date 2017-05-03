@@ -1,9 +1,7 @@
-README
+Template structure for the Docker container built for the ULB class INFO-F-105.
 
-1. Build the container using:
+# Quickstart
+git clone https://github.com/jdestefani/ulb-infof105-docker.git
+docker run -it jdestefani:ulb_infof105 -v ./shared_data:/home/test/shared_data
 
-docker build -t ulb_infof105 .
 
-2. Run the built container using:
-
-docker run -it ulb_infof105 -v ./data:/home/test/data
