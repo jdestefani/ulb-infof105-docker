@@ -3,6 +3,7 @@ Template structure for the Docker container built for the ULB class INFO-F-105.
 # Quickstart
 ```
 git clone https://github.com/jdestefani/ulb-infof105-docker.git
+cd ulb-infof105-docker
 docker run -it -v `pwd`/shared_data:/home/test/shared_data jdestefani/ulb_infof105:v0.1
 cd asm_test
 make
