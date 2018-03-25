@@ -16,7 +16,7 @@ RUN apt-get install -y gcc g++ gcc-multilib g++-multilib \
 	&& apt-get install -y gdb 
 
 # Install emacs in order to have a command line text-editor
-RUN apt-get install -y emacs24
+RUN apt-get install -y emacs-nox
 
 # Install unarchiver of choice
 RUN apt-get install -y p7zip-full
@@ -27,7 +27,7 @@ RUN chmod +x /usr/bin/startup.sh
 
 # Add Hello World code to test compiler
 ADD HelloWorld.cpp /HelloWorld.cpp
-ADD asm_test.zip /asm_test.zip
+ADD shared_data/asm_test.zip /asm_test.zip
 
 # Execute startup script
 CMD startup.sh
