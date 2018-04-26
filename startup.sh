@@ -11,7 +11,7 @@ g++ HelloWorld.cpp -o HelloWorld
 ./HelloWorld
 
 # Unpack asm_test
-7z e asm_test.zip -oasm_test
+7z e asm_test.zip -o asm_test
 
 # Run bash
 bash

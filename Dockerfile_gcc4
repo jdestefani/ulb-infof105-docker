@@ -1,5 +1,5 @@
 # Use Debian Sid Image
-FROM debian:sid
+FROM debian:jessie
 
 MAINTAINER Jacopo De Stefani <jdestefa@ulb.ac.be> 
 
